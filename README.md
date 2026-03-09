@@ -70,22 +70,14 @@ Step 7 – Authentication
 Login and registration system
 
 ▶️ How to Run
-
-Clone the repository
-
+1️⃣ Clone the repository
 git clone https://github.com/vr8010/Flask_Project.git
 cd Flask_Project
-
-Install Flask
-
+2️⃣ Install Flask
 pip install flask
-
-Run the application
-
+3️⃣ Run the application
 python app.py
-
-Open in browser:
-
+4️⃣ Open in browser
 http://127.0.0.1:5000
 🎯 Goal
 
