@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery Page</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#555;
+            text-align:center;
+            padding:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .gallery{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            padding:20px;
+        }
+
+        .gallery img{
+            width:250px;
+            height:180px;
+            margin:10px;
+            border-radius:5px;
+            box-shadow:0 0 5px gray;
+            transition:0.3s;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.05);
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>My Gallery</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="gallery">
+
+    <img src="https://picsum.photos/id/1015/600/400" alt="Nature Image">
+    <img src="https://picsum.photos/id/1016/600/400" alt="Mountain Image">
+    <img src="https://picsum.photos/id/1018/600/400" alt="River Image">
+    <img src="https://picsum.photos/id/1020/600/400" alt="Forest Image">
+    <img src="https://picsum.photos/id/1024/600/400" alt="Dog Image">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Landscape Image">
+
+</div>
+
+<footer>
+    <p>© 2026 My Gallery Website</p>
+</footer>
+
+</body>
+</html>
