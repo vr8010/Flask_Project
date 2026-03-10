@@ -1,96 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Blog Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
 }
 
-/* Header */
+/* Main section */
 
-header{
-background:rgba(0,0,0,0.8);
-color:white;
-text-align:center;
-padding:25px;
+.main{
+    text-align:center;
+    padding:80px 20px;
 }
 
-/* Navigation */
+/* Heading */
 
-nav{
-background:rgba(0,0,0,0.6);
-padding:15px;
-text-align:center;
+.main h1{
+    font-size:40px;
+    color:#333;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-font-size:18px;
-padding:8px 18px;
-border-radius:20px;
-transition:0.3s;
+/* Paragraph */
+
+.main p{
+    font-size:18px;
+    color:#666;
+    margin-top:10px;
 }
 
-nav a:hover{
-background:white;
-color:#333;
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#007BFF;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
 }
 
-/* Container */
-
-.container{
-width:85%;
-margin:auto;
-margin-top:40px;
-}
-
-/* Blog Card */
-
-.blog{
-background:white;
-padding:25px;
-margin-bottom:25px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-transition:0.3s;
-}
-
-.blog:hover{
-transform:translateY(-5px);
-}
-
-.blog h2{
-color:#333;
-margin-bottom:5px;
-}
-
-.date{
-color:gray;
-font-size:14px;
-margin-bottom:10px;
-}
-
-/* Footer */
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:40px;
+.btn:hover{
+    background:#0056b3;
 }
 
 </style>
@@ -99,60 +57,17 @@ margin-top:40px;
 
 <body>
 
-<header>
-<h1>My Blog</h1>
-<p>Welcome to my blog page</p>
-</header>
+{% include 'nav.html' %}
 
-<nav>
-<a href="index.html">Home</a>
-<a href="blog.html">Blogs</a>
-<a href="contact.html">Contact</a>
-</nav>
+<div class="main">
 
-<div class="container">
+<h1>Welcome to My Flask Website</h1>
 
-<div class="blog">
-<h2>My First Blog</h2>
-<p class="date">March 9, 2026</p>
-<p>This is my first blog post. Here you can write about technology, travel, education, or any topic you like.</p>
-</div>
+<p>This is a simple website built using Flask and HTML templates.</p>
 
-<div class="blog">
-<h2>Learning HTML</h2>
-<p class="date">March 5, 2026</p>
-<p>HTML is the basic language used to create websites. It helps structure web pages using tags like headings, paragraphs, and links.</p>
-</div>
-
-<div class="blog">
-<h2>Why Learn Web Development?</h2>
-<p class="date">March 1, 2026</p>
-<p>Web development is a valuable skill. It allows you to build websites, create projects, and even start a career in tech.</p>
-</div>
-
-<div class="blog">
-<h2>Introduction to CSS</h2>
-<p class="date">February 25, 2026</p>
-<p>CSS is used to style websites. It allows you to change colors, layouts, fonts, and create beautiful designs for your pages.</p>
-</div>
-
-<div class="blog">
-<h2>My Journey in Coding</h2>
-<p class="date">February 20, 2026</p>
-<p>Learning coding is exciting. Every day you learn something new and build projects that improve your skills.</p>
-</div>
-
-<div class="blog">
-<h2>Future of Web Development</h2>
-<p class="date">February 15, 2026</p>
-<p>The future of web development includes modern frameworks, AI tools, and faster technologies that help build powerful websites.</p>
-</div>
+<a href="/blog" class="btn">Read Blog</a>
 
 </div>
-
-<footer>
-<p>© 2026 My Blog Website</p>
-</footer>
 
 </body>
 </html>

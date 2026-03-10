@@ -1,84 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background-color:#f4f4f4;
-        }
+<style>
 
-        header{
-            background-color:#333;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
 
-        nav{
-            background:#555;
-            padding:10px;
-            text-align:center;
-        }
+/* Hero Section */
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:10px;
-            font-weight:bold;
-        }
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(to right,#4facfe,#00f2fe);
+    color:white;
+}
 
-        nav a:hover{
-            color:yellow;
-        }
+.hero h1{
+    font-size:45px;
+}
 
-        section{
-            padding:20px;
-            background:white;
-            margin:20px;
-            border-radius:8px;
-            box-shadow:0px 0px 10px gray;
-        }
+.hero p{
+    font-size:18px;
+}
 
-        footer{
-            background:#333;
-            color:white;
-            text-align:center;
-            padding:10px;
-            position:fixed;
-            bottom:0;
-            width:100%;
-        }
-    </style>
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:white;
+    color:#333;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ddd;
+}
+
+/* Features Section */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:250px;
+    text-align:center;
+    border-radius:8px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
 
 </head>
+
 <body>
 
-<!-- Header -->
-<header>
-    <h1>Welcome to My Website</h1>
-</header>
+{% include 'nav.html' %}
 
-<!-- Navigation Menu -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<!-- Hero Section -->
 
-<!-- Main Content -->
-<section>
-    <h2>Home Page</h2>
-    <p>This is the home page of my website.</p>
-    <p>Here you can add information about your website, business, or portfolio.</p>
-</section>
+<div class="hero">
 
-<!-- Footer -->
+<h1>Welcome to My Flask Website</h1>
+
+<p>Learn Flask Web Development with simple examples.</p>
+
+<a href="/blog" class="btn">Read Blog</a>
+
+</div>
+
+<!-- Features -->
+
+<div class="features">
+
+<div class="card">
+<h3>Fast</h3>
+<p>Flask is a lightweight and fast web framework.</p>
+</div>
+
+<div class="card">
+<h3>Simple</h3>
+<p>Easy to learn and perfect for beginners.</p>
+</div>
+
+<div class="card">
+<h3>Flexible</h3>
+<p>You can build APIs, websites and web apps.</p>
+</div>
+
+</div>
+
 <footer>
-    <p>© 2026 My Website | All Rights Reserved</p>
+<p>© 2026 Flask Website | Made with Python</p>
 </footer>
 
 </body>
