@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marks</title>
+</head>
+
+<body>
+
+<h2>Student Results</h2>
+
+<ul>
+
+{% for student in students %}
+
+<li>
+
+{{ student.name }} -
+
+{% if student.marks >= 80 %}
+Pass ⭐
+{% else %}
+Average
+{% endif %}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
