@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/static.css') }}">
+
+</head>
+<body>
+
+<h1 id="text">Welcome to Flask</h1>
+
+<button onclick="changeText()">Click Me</button>
+
+<br><br>
+
+<!-- Image -->
+<img src="{{ url_for('static', filename='images/lion.png') }}" width="800">
+<!-- JavaScript -->
+<script src="{{ url_for('static', filename='js/static.js') }}"></script>
+
+</body>
+</html>
